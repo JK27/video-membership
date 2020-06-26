@@ -1,39 +1,25 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# A simple video membership website built with Django.
 
-Welcome USER_NAME,
+This project shows how to create a video membership website using Django and Stripe billing.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## Getting Started
 
-## Gitpod Reminders
+Create a stripe account and put your stripe publishable key and secret key inside `settings.py` as well as your publishable key inside `checkout.js` in the static folder. Follow the [tutorial](https://youtu.be/zu2PBUHMEew) for guidance.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+**Note** that you will need to create your own Stripe plans in your dashboard and link those plan ID's in your Django admin.
 
-`python3 -m http.server`
+[![alt text](https://github.com/justdjango/video-membership/blob/master/thumbnail.png "Logo")](https://youtu.be/zu2PBUHMEew)
 
-A blue button should appear to click: *Make Public*,
+## Latest update of the code
 
-Another blue button should appear to click: *Open Browser*.
+Stripe changed their API to no longer allow a source being passed into a subscription. The code has been updated to now correctly bill a customer.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Where to find us
 
-A blue button should appear to click: *Make Public*,
+Like us on [Facebook](https://www.facebook.com/justdjangocode/)
 
-Another blue button should appear to click: *Open Browser*.
+Follow us on [Instagram](https://www.instagram.com/justdjangocode/)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+Subscribe to our [YouTube](https://www.youtube.com/channel/UCRM1gWNTDx0SHIqUJygD-kQ) Channel
 
-## Updates Since The Instructional Video
-
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!
+Or visit our [Website](https://www.justdjango.com)
